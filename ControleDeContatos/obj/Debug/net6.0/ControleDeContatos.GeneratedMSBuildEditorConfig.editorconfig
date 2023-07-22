@@ -1,0 +1,60 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ControleDeContatos
+build_property.RootNamespace = ControleDeContatos
+build_property.ProjectDir = /home/carinha/Dropbox/Cursos/Cursos_online/ASP.Net_MVC/ControleDeContatos/ControleDeContatos/
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /home/carinha/Dropbox/Cursos/Cursos_online/ASP.Net_MVC/ControleDeContatos/ControleDeContatos
+build_property._RazorSourceGeneratorDebug = 
+
+[/home/carinha/Dropbox/Cursos/Cursos_online/ASP.Net_MVC/ControleDeContatos/ControleDeContatos/Views/ControllerContato/ApagarConfirmacao.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29udHJvbGxlckNvbnRhdG8vQXBhZ2FyQ29uZmlybWFjYW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/carinha/Dropbox/Cursos/Cursos_online/ASP.Net_MVC/ControleDeContatos/ControleDeContatos/Views/ControllerContato/Criar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29udHJvbGxlckNvbnRhdG8vQ3JpYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/carinha/Dropbox/Cursos/Cursos_online/ASP.Net_MVC/ControleDeContatos/ControleDeContatos/Views/ControllerContato/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29udHJvbGxlckNvbnRhdG8vRWRpdGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/carinha/Dropbox/Cursos/Cursos_online/ASP.Net_MVC/ControleDeContatos/ControleDeContatos/Views/ControllerContato/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29udHJvbGxlckNvbnRhdG8vSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/carinha/Dropbox/Cursos/Cursos_online/ASP.Net_MVC/ControleDeContatos/ControleDeContatos/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/carinha/Dropbox/Cursos/Cursos_online/ASP.Net_MVC/ControleDeContatos/ControleDeContatos/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/carinha/Dropbox/Cursos/Cursos_online/ASP.Net_MVC/ControleDeContatos/ControleDeContatos/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/carinha/Dropbox/Cursos/Cursos_online/ASP.Net_MVC/ControleDeContatos/ControleDeContatos/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/carinha/Dropbox/Cursos/Cursos_online/ASP.Net_MVC/ControleDeContatos/ControleDeContatos/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/carinha/Dropbox/Cursos/Cursos_online/ASP.Net_MVC/ControleDeContatos/ControleDeContatos/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/carinha/Dropbox/Cursos/Cursos_online/ASP.Net_MVC/ControleDeContatos/ControleDeContatos/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-09n8isjgpn
