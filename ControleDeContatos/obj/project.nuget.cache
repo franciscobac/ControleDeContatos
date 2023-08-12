@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "sERPe8B7NaqDzyM09f4VqVj4/yCiP+zeJAKmGgJvQhMxnr52VByoR13GGW1+j8i1P6fwwaFJfF4kaMHahNvoDw==",
+  "dgSpecHash": "1in+Fj80D0VyBcYJMsej3i2p1PZ+spsJ4CuxKBZ5tl1g4UNee0U5N/4Woj8LWvLQ0n5i+4SDXeavlXwSKV6bYA==",
   "success": true,
   "projectFilePath": "/home/carinha/Dropbox/Cursos/Cursos_online/ASP.Net_MVC/ControleDeContatos/ControleDeContatos/ControleDeContatos.csproj",
   "expectedPackageFiles": [
@@ -71,7 +71,8 @@
     "/home/carinha/.nuget/packages/system.text.json/7.0.0/system.text.json.7.0.0.nupkg.sha512",
     "/home/carinha/.nuget/packages/system.threading.tasks/4.3.0/system.threading.tasks.4.3.0.nupkg.sha512",
     "/home/carinha/.nuget/packages/system.threading.tasks.extensions/4.5.4/system.threading.tasks.extensions.4.5.4.nupkg.sha512",
-    "/home/carinha/.nuget/packages/system.windows.extensions/5.0.0/system.windows.extensions.5.0.0.nupkg.sha512"
+    "/home/carinha/.nuget/packages/system.windows.extensions/5.0.0/system.windows.extensions.5.0.0.nupkg.sha512",
+    "/home/carinha/.nuget/packages/microsoft.netcore.app.host.linux-x64/6.0.20/microsoft.netcore.app.host.linux-x64.6.0.20.nupkg.sha512"
   ],
   "logs": []
 }
