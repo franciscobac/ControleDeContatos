@@ -24,7 +24,6 @@ namespace ControleDeContatos.Repositorio
         public List<UsuarioModel> BuscarTodos()
         {
             return _bancoContext.Usuarios.ToList();
-
         }
 
         public UsuarioModel Adicionar(UsuarioModel usuario)
