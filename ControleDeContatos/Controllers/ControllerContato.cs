@@ -42,8 +42,6 @@ namespace ControleDeContatos.Controllers
         {
             try
             {
-                _contatoRepositorio.Apagar(id);
-
                 bool apagado;
 
                 if (_contatoRepositorio.Apagar(id) != null)
@@ -64,8 +62,6 @@ namespace ControleDeContatos.Controllers
                 {
                     TempData["MensagemErro"] = $"Ops, não conseguimos excluir seu contato, tente novamente";
                 }
-
-                return RedirectToAction("Index");
             }
             catch (System.Exception erro)
             {

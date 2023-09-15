@@ -172,3 +172,4 @@ C:/Users/franc/Dropbox/Cursos/Cursos_online/ASP.Net_MVC/ControleDeContatos/Contr
 /home/carinha/Dropbox/Cursos/Cursos_online/ASP.Net_MVC/ControleDeContatos/ControleDeContatos/obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.ControleDeContatos.props
 /home/carinha/Dropbox/Cursos/Cursos_online/ASP.Net_MVC/ControleDeContatos/ControleDeContatos/obj/Debug/net6.0/staticwebassets.pack.json
 /home/carinha/Dropbox/Cursos/Cursos_online/ASP.Net_MVC/ControleDeContatos/ControleDeContatos/obj/Debug/net6.0/refint/ControleDeContatos.dll
+/home/carinha/Dropbox/Cursos/Cursos_online/ASP.Net_MVC/ControleDeContatos/ControleDeContatos/bin/Debug/net6.0/global.json
