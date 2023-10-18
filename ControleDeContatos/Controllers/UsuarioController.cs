@@ -25,9 +25,15 @@ namespace ControleDeContatos.Controllers
             return View();
         }
 
+        public IActionResult Editar(int id)
+        {
+            UsuarioModel usuario = _usuarioRepositorio.BuscarPorId(id);
+            return View(usuario);
+        }
+
         public IActionResult ApagarConfirmacao(int id)
         {
-            UsuarioModel usuario = _usuarioRepositorio.ListarPorId(id);
+            UsuarioModel usuario = _usuarioRepositorio.BuscarPorId(id);
             return View(usuario);
         }
 
@@ -45,7 +51,6 @@ namespace ControleDeContatos.Controllers
                 {
                     apagado = false;
                 }
-
 
                 if (apagado)
                 {
@@ -83,6 +88,38 @@ namespace ControleDeContatos.Controllers
                 TempData["MensagemErro"] = $"Ops, não conseguimos cadastrar seu usuário, tente novamente, detalhe do erro: {erro.Message}";
                 return RedirectToAction("Index");
             }
+        }
+
+        [HttpPost]
+        public IActionResult Editar(UsuarioSemSenhaModel usuarioSemSenhaModel)
+        {
+            try
+            {
+                UsuarioModel usuario = null;
+                if (ModelState.IsValid)
+                {
+                    usuario = new UsuarioModel()
+                    {
+                        Id = usuarioSemSenhaModel.Id,
+                        Nome = usuarioSemSenhaModel.Nome,
+                        Login = usuarioSemSenhaModel.Login,
+                        Email = usuarioSemSenhaModel.Email,
+                        Perfil = usuarioSemSenhaModel.Perfil
+                    };
+
+                    usuario = _usuarioRepositorio.Atualizar(usuario);
+                    TempData["MensagemSucesso"] = "Usuário alterado com sucesso!";
+                    return RedirectToAction("Index");
+                }
+
+                return View(usuario);
+            }
+            catch (System.Exception erro)
+            {
+                TempData["MensagemErro"] = $"Ops, não conseguimos atualizar o seu usário, tente novamente, detahle do erro: {erro.Message}";
+                return RedirectToAction("Index");
+            }
+
         }
     }
 }

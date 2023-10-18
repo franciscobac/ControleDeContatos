@@ -28,7 +28,7 @@
     }
 
     <br />
-    
+
     <h1 class="display-4">Listagem de usuários</h1>
 
     <table class="table" id="table-usuarios">
@@ -38,6 +38,7 @@
                 <th scope="col">Nome</th>
                 <th scope="col">Login</th>
                 <th scope="col">Email</th>
+                <th scope="col">Perfil</th>
                 <th scope="col">Data de cadastro</th>
                 <th scope="col"></th>
             </tr>
@@ -45,18 +46,21 @@
         <tbody>
             @if (Model != null && Model.Any())
             {
-                foreach (UsuarioModel usuario in Model)
+                foreach (var usuario in Model)
                 {
                     <tr>
                         <th scope="row">@usuario.Id</th>
                         <td>@usuario.Nome</td>
                         <td>@usuario.Login</td>
                         <td>@usuario.Email</td>
+                        <td>@(usuario.Perfil == ControleDeContatos.Enums.PerfilEnum.Admin ? "Administrador" : "Padrão")</td>
                         <td>@usuario.DataCadastro</td>
                         <td>
                             <div class="btn-group" role="group">
-                                <a role="button" class="btn btn-primary" asp-route-id="@usuario.Id" asp-controller="Usuario" asp-action="Editar">Editar</a>
-                                <a role="button" class="btn btn-danger" asp-route-Id="@usuario.Id" asp-controller="Usuario" asp-action="ApagarConfirmacao">Apagar</a>
+                                <a role="button" class="btn btn-primary" asp-route-id="@usuario.Id" asp-controller="Usuario"
+                                    asp-action="Editar">Editar</a>
+                                <a role="button" class="btn btn-danger" asp-route-Id="@usuario.Id" asp-controller="Usuario"
+                                    asp-action="ApagarConfirmacao">Apagar</a>
                             </div>
                         </td>
                     </tr>
@@ -64,9 +68,10 @@
             }
             else
             {
-                <tr class="odd"><td valign="top" colspan="5">Nenhum usuário encontrado</td></tr>
+                <tr class="odd">
+                    <td valign="top" colspan="5">Nenhum usuário encontrado</td>
+                </tr>
             }
         </tbody>
     </table>
 </div>
-
