@@ -15,10 +15,13 @@ namespace ControleDeContatos.Repositorio
 
         public UsuarioModel BuscarPorLogin(string login)
         {
-            var retornoBuscarPorLogin = _bancoContext.Usuarios.FirstOrDefault(x => x.Login.ToUpper() == login.ToUpper());
-            if (retornoBuscarPorLogin == null) throw new Exception("Ops, não conseguimos realizar seu login, por favor tente novamente!");
+            return _bancoContext.Usuarios.FirstOrDefault(x => x.Login.ToUpper() == login.ToUpper());
 
-            return retornoBuscarPorLogin;
+        }
+
+        public UsuarioModel BuscarPorEmailELogin(string email, string login)
+        {
+            return _bancoContext.Usuarios.FirstOrDefault(x => x.Email.ToUpper() == email.ToUpper() && x.Login.ToUpper() == login.ToUpper());
         }
 
         public UsuarioModel BuscarPorId(int id)
@@ -37,6 +40,7 @@ namespace ControleDeContatos.Repositorio
         public UsuarioModel Adicionar(UsuarioModel usuario)
         {
             usuario.DataCadastro = DateTime.Now;
+            usuario.SetSenhaHash();
             _bancoContext.Usuarios.Add(usuario);
             _bancoContext.SaveChanges();
             return usuario;
@@ -60,6 +64,25 @@ namespace ControleDeContatos.Repositorio
             return usuarioDB;
         }
 
+        public UsuarioModel AlterarSenha(AlterarSenhaModel alterarSenhaModel)
+        {
+            UsuarioModel usuarioDB = BuscarPorId(alterarSenhaModel.Id);
+
+            if (usuarioDB == null) throw new Exception("Houve um erro na atualização da senha, usuário não encontrado!");
+
+            if (!usuarioDB.SenhaValida(alterarSenhaModel.SenhaAtual)) throw new Exception("Senha atual não confere");
+
+            if (usuarioDB.SenhaValida(alterarSenhaModel.NovaSenha)) throw new Exception("Nova senha deve ser diferente da senha atual!");
+
+            usuarioDB.SetNovaSenha(alterarSenhaModel.NovaSenha);
+            usuarioDB.DataAtualizacao = DateTime.Now;
+
+            _bancoContext.Usuarios.Update(usuarioDB);
+            _bancoContext.SaveChanges();
+
+            return usuarioDB;
+        }
+
         public UsuarioModel Apagar(int id)
         {
             UsuarioModel usuarioDB = BuscarPorId(id);
@@ -71,6 +94,5 @@ namespace ControleDeContatos.Repositorio
 
             return usuarioDB;
         }
-
     }
 }

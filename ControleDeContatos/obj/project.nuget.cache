@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vJCRav4kG/N0MnkAXWXa0+wDZf+Yx5xCLGwN5fvKwBdk2Hn6vd9QLzodHf61f/P9wiP6+NE0aTcG0eqz+G6N7Q==",
+  "dgSpecHash": "6oOojLPL6/zTBAhYuZAIr0aZET9CfRFKvRaHZPCsPpW35UqFsC8FZUGGbmW7yk03kHu+EUUGd32lpCGBxF9ijg==",
   "success": true,
-  "projectFilePath": "/home/carinha/Dropbox/Cursos/Cursos_online/ASP.Net_MVC/ControleDeContatos/ControleDeContatos/ControleDeContatos.csproj",
+  "projectFilePath": "/home/carinha/Projects/ASP.Net_MVC/ControleDeContatos/ControleDeContatos/ControleDeContatos.csproj",
   "expectedPackageFiles": [
     "/home/carinha/.nuget/packages/azure.core/1.24.0/azure.core.1.24.0.nupkg.sha512",
     "/home/carinha/.nuget/packages/azure.identity/1.6.0/azure.identity.1.6.0.nupkg.sha512",

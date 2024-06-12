@@ -21,9 +21,9 @@ namespace ControleDeContatos.Repositorio
             return retornoListarPorId;
         }
 
-        public List<ContatoModel> BuscarTodos()
+        public List<ContatoModel> BuscarTodos(int usuarioId)
         {
-            return _bancoContext.Contatos.ToList();
+            return _bancoContext.Contatos.Where(x => x.UsuarioId == usuarioId).ToList();
 
         }
 

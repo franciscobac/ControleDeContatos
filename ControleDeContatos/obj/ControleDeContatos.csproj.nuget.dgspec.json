@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/carinha/Dropbox/Cursos/Cursos_online/ASP.Net_MVC/ControleDeContatos/ControleDeContatos/ControleDeContatos.csproj": {}
+    "/home/carinha/Projects/ASP.Net_MVC/ControleDeContatos/ControleDeContatos/ControleDeContatos.csproj": {}
   },
   "projects": {
-    "/home/carinha/Dropbox/Cursos/Cursos_online/ASP.Net_MVC/ControleDeContatos/ControleDeContatos/ControleDeContatos.csproj": {
+    "/home/carinha/Projects/ASP.Net_MVC/ControleDeContatos/ControleDeContatos/ControleDeContatos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/carinha/Dropbox/Cursos/Cursos_online/ASP.Net_MVC/ControleDeContatos/ControleDeContatos/ControleDeContatos.csproj",
+        "projectUniqueName": "/home/carinha/Projects/ASP.Net_MVC/ControleDeContatos/ControleDeContatos/ControleDeContatos.csproj",
         "projectName": "ControleDeContatos",
-        "projectPath": "/home/carinha/Dropbox/Cursos/Cursos_online/ASP.Net_MVC/ControleDeContatos/ControleDeContatos/ControleDeContatos.csproj",
+        "projectPath": "/home/carinha/Projects/ASP.Net_MVC/ControleDeContatos/ControleDeContatos/ControleDeContatos.csproj",
         "packagesPath": "/home/carinha/.nuget/packages/",
-        "outputPath": "/home/carinha/Dropbox/Cursos/Cursos_online/ASP.Net_MVC/ControleDeContatos/ControleDeContatos/obj/",
+        "outputPath": "/home/carinha/Projects/ASP.Net_MVC/ControleDeContatos/ControleDeContatos/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/carinha/.nuget/NuGet/NuGet.Config"
@@ -82,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.409/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.410/RuntimeIdentifierGraph.json"
         }
       }
     }
